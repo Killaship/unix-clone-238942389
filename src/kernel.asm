@@ -33,7 +33,7 @@ DATA_SEG equ gdt_data - gdt_start
 
 start:
      lgdt [gdt_pointer]  
-     jmp CODE_SEG:___kmain
+     jmp CODE_SEG:kmain
     .setcs:
     mov ax, DATA_SEG          ; Setup the segment registers with our flat data selector
     mov ds, ax
