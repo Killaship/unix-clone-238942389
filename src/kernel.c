@@ -1,6 +1,6 @@
 #include "common.h"
 
-void kmain() {
+void kernmain() {
   while(1) {
     // hang
   }
