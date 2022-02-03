@@ -1,6 +1,4 @@
-#ifndef COMMON_H
-#define COMMON_H // header guards, yay!
-#pragma once
+#include "common.h"
 
 // Possibly libc stuff
 // https://wiki.osdev.org/Meaty_Skeleton
@@ -152,4 +150,3 @@ char read_port(unsigned short port) {
 void write_port(unsigned short port, unsigned char data) {
 	asm volatile ("outb %%al, %%dx" :: "a" (data), "d" (port));
 }
-#endif
